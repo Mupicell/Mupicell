@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://musel14.wordpress.com/wp-content/uploads/2025/09/wp-17577853544847632536777576567851.png" alt="Logo Musel">
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <a href="/Halaman Profil index.html">
+        <span style="font-size: 32px; color: var(--text-dark);">👤</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h2>Solusi Pengisian Pulsa dan Kuota Proses Cepat Harga Hemat</h2>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-target="pulsaList">
+        <img src="https://musel14.wordpress.com/wp-content/uploads/2025/10/pulsa4819851536162564070.png" alt="Pulsa"> 
+        <span>Pulsa</span>
+      </div>
+      <div class="tab" data-target="kuotaList">
+        <img src="https://musel14.wordpress.com/wp-content/uploads/2025/10/kuota1580464567844866358.png" alt="Paket Kuota">
+        <span>Paket Kuota</span>
+      </div>
+      <div class="tab" data-target="lainnyaList">
+        <img src="https://musel14.wordpress.com/wp-content/uploads/2025/10/lainnya8262301396335917917.png" alt="Lainnya">
+        <span>Lainnya</span>
+      </div>
+    </div>
+
+    <section id="pulsaList" class="content-section active">
+      <div class="card">
+        <div class="input-box">
+          <span>📞</span>
+          <input type="tel" id="pulsaPhone" placeholder="Masukkan nomor HP">
+        </div>
+        <div id="pulsaOperator" class="operator-info">
+          <span id="pulsaOperatorName"></span>
+        </div>
+        <div id="pulsaItems"></div>
+      </div>
+    </section>
+
+    <section id="kuotaList" class="content-section">
+      <div class="card">
+        <div class="input-box">
+          <span>📞</span>
+          <input type="tel" id="kuotaPhone" placeholder="Masukkan nomor HP">
+        </div>
+        <div id="kuotaOperator" class="operator-info">
+          <span id="kuotaOperatorName"></span>
+        </div>
+        <div id="kuotaItems"></div>
+      </div>
+    </section>
+
+    <section id="lainnyaList" class="content-section">
+      <div class="card">
+        <div class="input-box">
+          <input type="text" id="lainnyaSearch" placeholder="Cari produk lainnya">
+        </div>
+        <div id="lainnyaItems"></div>
+      </div>
+    </section>
+
+    <section class="download-section">
+      <h3>Download Aplikasi Musel</h3>
+      <p>Aplikasi kami tersedia di Google Play Store</p>
+      <a href="https://play.google.com/store/apps/details?id=com.musel" class="google-play-btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download di Google Play">
+      </a>
+    </section>
+
+    <section id="registerSection" class="card">
+      <h3>Daftar / Masuk</h3>
+      <p>Verifikasi nomor Anda untuk melanjutkan transaksi.</p>
+      <div class="input-box">
+        <span>📞</span>
+        <input type="tel" id="regPhone" placeholder="Nomor HP untuk daftar/masuk">
+      </div>
+      <button class="btn" id="btnDaftar">Daftar</button>
+      <button class="btn" id="btnMasuk">Masuk</button>
+    </section>
+
+    <section id="tentangMusel" class="content-section">
+      <div class="card">
+        <h3>Tentang Musel</h3>
+        <p>Musel adalah aplikasi terkemuka untuk pengisian pulsa, paket data, dan berbagai produk digital lainnya dengan proses cepat dan harga kompetitif.</p>
+      </div>
+    </section>
+
+    <section id="syaratKetentuan" class="content-section">
+      <div class="card">
+        <h3>Syarat & Ketentuan</h3>
+        <ul>
+          <li>Layanan ini hanya tersedia untuk pengguna terdaftar.</li>
+          <li>Harga dapat berubah sewaktu-waktu tanpa pemberitahuan.</li>
+          <li>Kami tidak bertanggung jawab atas kesalahan input nomor tujuan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="kontakKami" class="content-section">
+      <div class="card">
+        <h3>Kontak Kami</h3>
+        <ul>
+          <li>Email: support@musel.com</li>
+          <li>Telepon: 021-12345678</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="liveChat" class="content-section">
+      <div class="card">
+        <h3>Live Chat</h3>
+        <p>Silakan gunakan fitur live chat untuk terhubung langsung dengan tim dukungan kami.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-col">
+      <div class="footer-link" data-target="tentangMusel">Tentang Musel</div>
+      <div class="footer-link" data-target="syaratKetentuan">Syarat & Ketentuan</div>
+      <div class="footer-link" data-target="kontakKami">Kontak Kami</div>
+      <div class="footer-link" data-target="liveChat">Live Chat</div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/musel" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Facebook_logo_2023.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/musel" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Instagram_logo_2022.svg" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@musel" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/TikTok_logo_2019.svg" alt="TikTok"></a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Musel. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
