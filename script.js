@@ -1,1 +1,0 @@
-// Semua JavaScript dari file asli sudah dipindahkan ke sini
